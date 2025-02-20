@@ -1,0 +1,513 @@
+/* =======================GLOBAL======================== */
+.title h3{
+    font-weight: 900;
+    font-size: 2.5rem;
+
+}
+ .title h3::after{
+    content: '';
+    background-image: url('../imgs/dots.png');
+    background-repeat: repeat;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    z-index: -1;
+}
+/* =======================GLOBAL======================== */
+
+/* =======================NAVBAR======================== */
+.navbar .navbar-brand , .navbar .nav-link , .navbar .nav-link.active{
+    color: black;
+}
+
+.navbar .nav-item{
+    padding-inline: 12px;
+}
+
+nav .hover::before {
+    content: '';
+    width: 0 ;
+    height: 2px ;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    background-color: black;
+    transition: 0.5s;
+}
+
+nav .hover:hover::before {
+    width: 50px !important;
+}
+
+nav .hover{
+    position: relative;
+}
+/* =======================NAVBAR======================== */
+
+/* =======================HOME======================== */
+#home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.604) ,rgba(0, 0, 0, 0.604)) , url('../imgs/bg.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home .caption h5{
+    font-size: 3.125rem;
+    font-weight: 900;
+}
+
+#home .caption .after{
+    font-size: 3.75rem;
+}
+
+#home .caption .after::after{
+    content: '|';
+    animation: text 3s linear infinite alternate;
+    font-size: 3.75rem;
+}
+
+@keyframes text {
+    0%{content: "|"}
+    5%{content: "L|"}
+    10%{content: "La|"}
+    15%{content: "Lar|"}
+    19%{content: "Larr|"}
+    23%{content: "Larry|"}
+    26%{content: "Larr|"}
+    30%{content: "Lar|"}
+    35%{content: "La|"}
+    40%{content: "L|"}
+    45%{content: "D|"}
+    50%{content: "De|"}
+    55%{content: "Des|"}
+    60%{content: "Desi|"}
+    65%{content: "Desig|"}
+    70%{content: "Desige|"}
+    73%{content: "Desiger|"}
+    78%{content: "Desige|"}
+    83%{content: "Desig|"}
+    86%{content: "Desi|"}
+    90%{content: "Des|"}
+    93%{content: "De|"}
+    96%{content: "D|"}
+    100%{content: "|"}
+}
+
+#home .caption .icons span{
+background-color: #0c1315d1;
+display: inline-block;
+padding:0.5rem;
+border-radius: 50%;
+margin-inline: 0.1rem;
+}
+/* =======================HOME======================== */
+
+/* =======================ABOUT======================== */
+#about .container .about_img::after{
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+#about .container .info .ui_ux{
+    color: #999;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#about .container .info h3{
+    font-weight: 800;
+}
+
+#about .container .info p{
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #748182;
+}
+
+#about .skills .prog{
+    background-color:#F7F7F7 ;
+    height: 1.5rem;
+}
+
+#about .skills .prog-holder .prog span{
+    background-color: #1C1C1C;
+    height: 100%;
+}
+
+#about .skills .prog-holder .prog span::after{
+    content: attr(data-progress);
+    position: absolute;
+    color: white;
+    right: 0;
+}
+
+#about .button .whitee , #about .button .blacck{
+    transition-duration: 0.5s;
+    padding: 0.635rem 1.875rem;
+}
+
+#about .button .whitee:hover{
+    background-color: white !important;
+    color: #1C1C1C !important;
+} 
+#about .button .blacck:hover{
+    background-color: black !important;
+    color: white !important;
+} 
+/* =======================ABOUT======================== */
+
+/* =======================Services======================== */
+#services{
+    background-color: #f7f7f7;
+    padding-block: 5rem;
+}
+
+
+
+#services .data{
+    padding: 3.125rem 1.25rem;
+}
+
+#services .data span{
+    background-color: #f4f4f4;
+    color: #1c1c1cea;
+    font-size: 1.875rem;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 50%; 
+    transition-duration: 0.5s;
+    margin-bottom: 1.25rem;
+}
+
+#services .data:hover span{
+    background-color: black;
+    color: white;
+}
+
+#services .data h6{
+        font-size: 1.25rem;
+        font-weight: 800;
+}
+
+#services .data p{
+    color: #748182;
+    word-spacing: 2px;
+}
+/* =======================Services======================== */
+
+/* =======================PROTOFLIO======================== */
+#protoflio .pro_info span{
+    padding-inline: 8px;
+}
+
+#protoflio .img_info h6{
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#protoflio .img_info .icon{
+    background-color: black;
+    color: white;
+   width: 2rem;
+   height: 2rem;
+   display: inline-block;
+    font-size: 1rem;
+    border-radius: 50%;
+    
+}
+
+#protoflio .img_info{
+    transition-duration: 0.5s;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 97%;
+    height: 97%;
+}
+
+#protoflio .img_more_info{
+position: absolute;
+top: 50%;
+left: 0;
+text-align: center;
+width: 100%;
+transform: translateY(-50%);
+}
+
+#protoflio .img_more_info h6{
+    padding-bottom: 40px;
+    transition-duration: 1s;
+}
+
+#protoflio .pro_img:hover .img_info{
+    top: 1.5%;
+    left: 1.5%;
+}
+
+#protoflio .pro_img:hover h6 {
+   padding-bottom: 0;
+}
+/* =======================PROTOFLIO======================== */
+
+/* =======================tESTMONIALS======================== */
+#testmonials{
+    background-color: #f7f7f7;
+    padding-block: 2rem;
+}
+
+#testmonials .slider_img{
+    width: 6.25rem; 
+}
+
+#testmonials p{
+    word-spacing: 2px;
+    line-height: 1.6;
+    font-size: .9375rem;
+    color: #748182;
+    padding-block: .5rem;
+}
+
+#testmonials h6{
+    font-weight: 600;
+   
+
+}
+
+#testmonials span{
+    display: inline-block;
+    font-weight: 600;
+    color: #748182;
+    font-size: .75rem;
+    margin-bottom: 80px;
+    margin-top: -5px;
+
+}
+
+.carousel-indicators [data-bs-target]{
+    width: .625rem;
+    height: .625rem;
+    border-radius: 50%;
+    margin-inline: .5rem;
+    background-color: #869791;
+    
+}
+/* =======================tESTMONIALS======================== */
+
+/* =======================RECORDS======================== */
+#records .record1 span i{
+    font-size: 2.1875rem;
+}
+
+#records .record1 h3{
+    font-size: 1.875rem;
+    font-weight: 900;
+    margin-top: .5rem;
+}
+
+#records .record1 p{
+    font-weight: 600;
+    font-size: .9375rem;
+    color: #748182;
+}
+
+/* =======================RECORDS======================== */
+
+/* =======================TEAM======================== */
+#team{
+    background-color: #F7F7F7;
+    padding-bottom: 5rem;
+}
+
+#team .title{
+    padding-block: 5rem;
+}
+
+#team .img_info {
+    background-color: #5B5B5B;
+    border-radius: .3125rem;
+}
+
+
+
+#team .img_info .icons span{
+    background-color:black  ;
+    display: inline-block;
+    width: 2.5rem;
+    height: 40px;
+    border-radius: 50%;
+    margin-inline: .3125rem; 
+    color: white;
+}
+
+#team .img_info .icons span i{
+    font-size: 1.5625rem;
+    margin-top: .4688rem;    
+}
+
+#team .img_info .icons{
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 1.5%;
+    left: 1.5%;
+    width: 97%;
+    height: 97%;
+    text-align: center;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+#team .img_info .icons .spaces{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+#team .img_info:hover .icons{
+    opacity: 1;
+    transform: rotateY(360deg) scale(1, 1);
+}
+
+#team .img_info:hover img{
+    scale: 1.3;
+}
+
+#team .img_info .icons span:hover{
+    background-color:white  ;
+    color: black;
+    border: 1px solid black;
+}
+
+#team .img_info .img img{
+    transition-duration: 0.5s;
+}
+/* =======================TEAM======================== */
+
+/* =======================CONTACT_US======================== */
+#contact_us .info span{
+    background-color: #F7F7F7;
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: 1.7rem;
+    margin: 0 auto;
+}
+
+#contact_us .info span:hover{
+    background-color: black;
+    color: white;
+}
+
+#contact_us .info h6{
+    font-weight: 700;
+}
+
+#contact_us .info p{
+    font-size: 15px;
+    color: #748182;
+}
+
+#contact_us .section-wid{
+    width: 70%;
+} 
+
+#contact_us .inp1 input{
+    padding: 7px 5px;
+    border-radius: 5px;
+    background-color: #F4F4F4;
+    border:1px solid transparent;
+    outline-color: transparent;
+}
+
+#contact_us textarea{
+    resize: none;
+    border-radius: 5px; 
+    background-color: #F4F4F4;
+    font-weight: 200;
+    border:1px solid transparent;
+    outline-color: transparent;
+}
+
+#contact_us .button input{
+    padding: 10px 40px;
+    background-color:black;
+    color: #FFFFFF;
+    font-size: 15px;
+    border: transparent;
+    border-radius: 5px;
+}
+
+#contact_us .button input:hover{
+    background-color: white;
+    color: black;
+    font-weight: 300;
+    border: 1px solid black;
+}
+/* =======================CONTACT_US======================== */
+.footer{
+    margin-top: 5rem;
+    height: 5.625rem;
+    background-color: #1C1C1C;
+    color: RGB(116, 129, 130);
+    font-size: .875rem;
+    word-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/***************************MEDIA_QURY*************************/
+/* `lg` */
+@media (max-width: 991.98px) {
+/* ==========About=========== */
+#about .info{
+    padding-top: 80px;
+}
+/* ==========About=========== */
+
+/* ==========SERVICES=========== */
+#services .squery{
+    padding-bottom: 30px;
+}
+
+#services .ssquery{
+    padding-bottom: 80px;
+ }
+/* ==========SERVICES=========== */
+
+/* ==========RECORD=========== */
+#records .rquery{
+    padding-bottom: 30px;
+}
+/* ==========RECORD=========== */
+}
+ 
+/* `md` */
+@media (max-width: 767.98px) {
+/* ==========HOME=========== */
+#home .caption .after::after{
+    font-size: 2rem;
+}
+
+#home .caption .after{
+    font-size: 2rem;
+}
+/* ==========HOME=========== */
+}
+/***************************MEDIA_QURY*************************/
